@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joshi.todo.AddTodoActivity">
+
+    <RelativeLayout
+        android:layout_width="379dp"
+        android:layout_height="512dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Titel" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Beschreibung" />
+
+        <Spinner
+            android:id="@+id/spinPriori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/description"
+            android:layout_alignStart="@+id/description"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="39dp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/txtPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinPriori"
+            android:layout_alignStart="@+id/spinPriori"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Priorität" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
